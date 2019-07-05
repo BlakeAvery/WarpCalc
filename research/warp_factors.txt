@@ -1,0 +1,44 @@
+Notes:
+- Warp 1 is 1c. After that everything follows some weird ass scale. Warp 10 is infinite, so the program should always
+return these values as some sort of constant when they are inputted. I'm not sure if we'll bother with values below warp
+speed, personally I don't see the point BUT it also wouldn't be too hard. I think.
+
+- Apparently there's some equation used by Wolfram Alpha to calculate warp factors that is accurate up to warp 9.
+The formula is v = w^10/3 c, where v is velocity, w is warp factor, and c is the speed of light.
+
+- I'm thinking we should keep each warp factor in the code as a constant, just for a quick reference.
+
+warp_factors.txt
+This file is essentially some cheap documentation on how I came up with the actual code for calculating the warp shit
+In Professor Tom Calabrese's list of steps for programming, this would probably be steps 1-3.
+
+Warp Scale as as listed by that fucker Okuda (Obtained from Star Trek Encyclopedia ISBN 9780671536091):
+Warp 1 - 1c
+Warp 2 - 10c
+Warp 3 - 39c
+Warp 4 - 102c
+Warp 5 - 214c
+Warp 6 - 392c
+Warp 7 - 656c
+Warp 8 - 1024c
+Warp 9 - 1516c
+Warp 9.2 - 1649c
+Warp 9.6 - 1919c
+Warp 9.9 - 3053c
+Warp 9.99 - 7912c
+Warp 9.9999 - 199516c
+Warp 10 - ∞c / Transwarp speed
+
+Function listing:
+
+Main - Takes input, redirects to other functions
+WarpToC - Takes a warp factor as parameter, returns float representing factor of c
+CToWarp - Takes factor of c as parameter, returns float representing warp factor.
+(add more later)
+
+Web sources:
+https://en.wikipedia.org/wiki/Warp_drive
+https://memory-alpha.fandom.com/wiki/Warp_factor
+http://www.ex-astris-scientia.org/treknology/warp6.htm
+https://www.wolframalpha.com/input/?i=warp+factor+5+TNG
+https://scifi.stackexchange.com/questions/124718/in-star-trek-how-fast-is-warp-9-99
