@@ -5,6 +5,7 @@ speed, personally I don't see the point BUT it also wouldn't be too hard. I thin
 
 - Apparently there's some equation used by Wolfram Alpha to calculate warp factors that is accurate up to warp 9.
 The formula is v = w^10/3 c, where v is velocity, w is warp factor, and c is the speed of light.
+UPDATE: Fc = (w^(10/3)c) / c
 
 - I'm thinking we should keep each warp factor in the code as a constant, just for a quick reference.
 
